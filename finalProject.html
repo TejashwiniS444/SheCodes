@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f8f8f8;
+      }
+      div {
+        background-color: white;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      img {
+        width: 100px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      p {
+        color: #666;
+        line-height: 1.5;
+      }
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+      button {
+        margin: 0 auto;
+        display: block;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+      img {
+        width: 250px;
+        height: 100px;
+        max-width: 80%;
+      }
+      .moreInfo {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+      }
+      .footer {
+        text-align: center;
+        font-size: 14px;
+        color: #666;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/155/259/original/logo-shecodes-3dfa60aeab8ef361842da5a2b6d46db3af1b7afafefee3dde0a9846389de754b.png?1737389590"
+        />
+        <h1>SheCodes</h1>
+        <p>
+          SheCodes is an online coding platform designed to
+          <strong> empower women </strong> by teaching them programming skills
+          in a supportive environment. It offers structured workshops on HTML,
+          CSS, JavaScript, and other web development tools, enabling beginners
+          to build real-world projects. With a focus on bridging the gender gap
+          in tech, SheCodes provides hands-on learning, mentorship, and
+          community support. The platform also offers certifications and career
+          guidance, helping women advance in the tech industry.
+        </p>
+      </div>
+      <div>
+        <h1>About our Instructor</h1>
+        <p>
+          Matt Delac is a software engineer with 10+ years of experience who has
+          worked with companies such as Google and Airbnb. Originally from 🇫🇷
+          France, he started a company in 🇺🇸 Silicon Valley with funding from Y
+          Combinator (#1 startup accelerator worldwide), has a Masters degree in
+          computer engineering from 🇨🇦 Canada, worked as a full-stack engineer
+          in 🇦🇺 Australia and has taught 200,000+ students how to code (online
+          and offline) through SheCodes. His workshop rating average is 🌟
+          4.9/5.
+        </p>
+      </div>
+      <div>
+        <h1>My Learning Journey</h1>
+        <p>
+          I loved the SheCodes Basic workshop! It was a great experience and I
+          learned a lot. The lessons are very easy to follow and the challenges
+          are fun. I highly recommend it to anyone who wants to learn how to
+          code. - Tejashwini S
+        </p>
+      </div>
+      <p class="moreInfo">
+        Learn more about SheCodes on 🔗<a
+          href="https://www.shecodes.io/"
+          target="_blank"
+          >SheCodes
+        </a>
+      </p>
+      <button>Apply Now!</button>
+
+      <p class="footer">
+        Coded By
+        <em>
+          <a
+            href="https://www.linkedin.com/in/tejashwini-s-588809296/"
+            target="_blank"
+            >Tejashwini S</a
+          ></em
+        >
+      </p>
+      <script>
+        let applyButton = document.querySelector("button");
+        function apply() {
+          let name = prompt("What is your name?");
+          let country = prompt("Where are you from?");
+
+          alert(
+            "Hi, " +
+              name +
+              "! Thank you for applying to SheCodes. We will get back to you soon. Your application from " +
+              country +
+              " has been received."
+          );
+        }
+        applyButton.addEventListener("click", apply);
+      </script>
+    </div>
+  </body>
+</html>
