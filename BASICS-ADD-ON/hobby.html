@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cooking - My favourite hobby🍳</title>
+    <style>
+      img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+      body {
+        background: linear-gradient(
+          106.5deg,
+          rgba(255, 215, 185, 0.91) 23%,
+          rgba(223, 159, 247, 0.8) 93%
+        );
+        font-size: 18px;
+      }
+      .container {
+        height: 750px;
+        width: 500px;
+        width: 50%;
+        display: block;
+        margin: 0 auto;
+        background: white;
+        padding: 20px 20px 20px 20px;
+        border-radius: 25px;
+      }
+      h1 {
+        text-align: center;
+        font-size: 34px;
+      }
+      .cook {
+        margin: 0 auto;
+        display: block;
+        font-size: 20px;
+        color: black;
+        transition: all 250ms ease-in-out;
+        margin-bottom: 20px;
+        padding: 10px;
+        background: white;
+        border-radius: 15px;
+        border: 1px solid plum;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .cook:hover {
+        background-color: plum;
+        cursor: pointer;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      .theme {
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        margin: 0 auto;
+        display: block;
+        font-size: 20px;
+        transition: all 300ms ease-in-out;
+        padding: 10px;
+        border: 0px;
+        margin-bottom: 10px;
+      }
+      .theme:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+
+      .main-image {
+        height: 250px;
+        width: 500px;
+        border-radius: 25px;
+        transition: all 200ms ease-in-out;
+        margin-bottom: 30px;
+      }
+
+      .main-image:hover {
+        transform: scale(1.1);
+        filter: contrast(80%);
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 20px;
+      }
+
+      .grid img {
+        object-fit: cover;
+        width: 100%;
+        transition: all 200ms ease-in-out;
+      }
+      .grid img:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+      }
+      .dark {
+        background: linear-gradient(
+          109.6deg,
+          rgb(36, 45, 57) 11.2%,
+          rgb(16, 37, 60) 51.2%,
+          rgb(0, 0, 0) 98.6%
+        );
+      }
+      .dark .container {
+        background: linear-gradient(
+          89.7deg,
+          rgb(0, 0, 0) -10.7%,
+          rgb(53, 92, 125) 88.8%
+        );
+        color: white;
+      }
+      .dark .cook {
+        background-color: black;
+        color: white;
+      }
+      .dark .cook:hover {
+        background-color: white;
+        color: black;
+      }
+      .dark a {
+        color: lightblue;
+      }
+
+      .dark a:hover {
+        color: rgb(212, 229, 229);
+      }
+      a:hover {
+        color: black;
+      }
+      .dark footer {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="theme">Change Theme</button>
+    <div class="container">
+      <h1>🔥Savor the Flavor: My Passion for Cooking🍽️</h1>
+      <a href="https://en.wikipedia.org/wiki/Cooking" target="_blank">
+        <img
+          src="https://media.istockphoto.com/id/1477430966/photo/woman-preparing-quinoa-vegetable-mix-cooked-in-a-frying-pan.jpg?s=612x612&w=0&k=20&c=eGlflJ8A7Kg8SbidqJxDp9hzbG0ETt3saS7Z4Sf250g="
+          alt="Main image of cooking"
+          class="main-image"
+        />
+      </a>
+      <div class="grid">
+        <img
+          src="https://images.healthshots.com/healthshots/en/uploads/2023/12/20134443/cooking.jpg"
+          alt="prepation of food"
+        />
+        <img
+          src="https://images.pexels.com/photos/2284166/pexels-photo-2284166.jpeg?cs=srgb&dl=pexels-mvdheuvel-2284166.jpg&fm=jpg"
+        />
+        <img
+          src="https://info.ehl.edu/hubfs/Imported_Blog_Media/1440x960-cooking-terms-1.jpg"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2017/03/10/13/57/cooking-2132874_640.jpg"
+        />
+      </div>
+      <p>
+        Cooking isn’t just about food—it’s an art 🎨, a science 🧪, and a way to
+        express love ❤️. From sizzling spices 🌶️ to delightful desserts 🍰,
+        every dish tells a story. Join me on this flavorful journey 🚀 as I
+        explore new recipes 📖, experiment with ingredients 🥕🧄, and share the
+        joy of creating mouthwatering meals 🍛. Let’s turn simple ingredients
+        into unforgettable experiences! 😋✨
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Cooking" target="_blank">
+        📖Read more about Cooking on Wikipedia</a
+      >
+      <div>
+        <button class="cook">Learn to Cook!</button>
+      </div>
+    </div>
+    <footer>
+      Coded with 💖 by
+      <a
+        href="https://www.linkedin.com/in/tejashwini-s-588809296/"
+        target="_blank"
+        >Tejashwini S</a
+      >
+    </footer>
+
+    <script>
+      function changetheme() {
+        let body = document.querySelector("body");
+        //body.classList.toggle("dark");
+        if (body.classList.contains("dark")) {
+          body.classList.remove("dark");
+        } else {
+          body.classList.add("dark");
+        }
+      }
+
+      let button1 = document.querySelector(".theme");
+      button1.addEventListener("click", changetheme);
+    </script>
+  </body>
+</html>
